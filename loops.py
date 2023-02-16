@@ -24,17 +24,17 @@ stop - to stop the car
 quit - to exit
         ''')
     elif command == "start":
-        if engine_running == True:
-            print("The engine is already running")
+        if engine_running:
+            print("The engine is already running.")
         else:
             print("The engine starts.")
-        engine_running = True
+            engine_running = True
     elif command == "stop":
-        if engine_running == True:
+        if engine_running:
             print("The engine stops.")
+            engine_running = False
         else:
-            print("The engine is not running")
-        engine_running = False
+            print("The engine is not running.")
     elif command == "quit":
         break
     else:
