@@ -1,15 +1,18 @@
 # BMR Calculator
 
-gender = input ("What's your gender? M/K ")
-weight = input('How much do you weight in kg? ')
-height = input("what's your height in cm? ")
-age = input("How old are you? ")
-bmi = round(int(weight)/(int(height)/ 100)**2, 2)
+gender = input ("What's your gender? M/F ")
+weight = int(input('How much do you weight in kg? '))
+height = int(input("what's your height in cm? "))
+age = int(input("How old are you? "))
+bmi = round(weight/(height/ 100)**2, 2)
 evaluation = ''
+
+
 if gender.upper() == 'M':
-    bmr = round(88.362 + (13.397 * int(weight)) + (4.799 * int(height)) - (5.677 * int(age)), 2)
+    bmr = round(88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age), 2)
 else:
-    bmr = round(447.593 + (9.247 * int(weight)) + (3.098 * int(height)) - (4.330 * int(age)), 2)
+    bmr = round(447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age), 2)
+
 
 if bmi < 18.5:
     evaluation = 'you have an underweight.'
