@@ -13,18 +13,28 @@ else:
     print("Not this time!")
 '''
 # car simulation game
-command = ''
-while command != "quit":
+engine_running = False
+while True:
     command = input("> ").lower()
     if command == "help":
-        print('''Type:
-        start - to start the car
-        stop - to stop the car
-        quit - to exit''')
+        print('''
+Type:
+start - to start the car
+stop - to stop the car
+quit - to exit
+        ''')
     elif command == "start":
-        print("The engine starts.")
+        if engine_running == True:
+            print("The engine is already running")
+        else:
+            print("The engine starts.")
+        engine_running = True
     elif command == "stop":
-        print("The engine stops.")
+        if engine_running == True:
+            print("The engine stops.")
+        else:
+            print("The engine is not running")
+        engine_running = False
     elif command == "quit":
         break
     else:
