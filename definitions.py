@@ -3,11 +3,11 @@ def appreciate_effort():
     print("You'll soon write amazing codes!")
 
 
-def greet_user(name):  # name is a parameter of the function
+def greet_user(first_name, last_name):  # name is a parameter of the function
     print(f'''
-Hi {name},
+Hi {first_name} {last_name},
 Welcome aboard!
     ''')
 
 
-greet_user('Maciej')  # 'Maciej' is an argument of the function
+greet_user('Maciej', 'Polcyn')  # positional arguments - the position matters
