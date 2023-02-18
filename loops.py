@@ -55,9 +55,16 @@
 #     for y in range(3):
 #         print(f"({x}, {y})")
 
-numbers = [5,2,5,2,2]
-for row in numbers:
-    printer = ''
-    for x in range(row):
-        printer += "X"
-    print(printer)
+# numbers = [2,2,2,2,5]
+# for row in numbers:
+#     printer = ''
+#     for x in range(row):
+#         printer += "X"
+#     print(printer)
+
+numbers = [0,6,4,3,2,56,76,34,6,54,98,90,98,55,1]
+biggest_nr = 0
+for i in numbers:
+    if i > biggest_nr:
+        biggest_nr = i
+print(biggest_nr)
