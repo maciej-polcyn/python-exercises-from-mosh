@@ -10,4 +10,6 @@ Welcome aboard!
     ''')
 
 
-greet_user('Maciej', 'Polcyn')  # positional arguments - the position matters
+greet_user(
+    last_name='Polcyn',
+    first_name='Maciej')  # keyword arguments - position doesn't matter
