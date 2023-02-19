@@ -10,6 +10,14 @@ Welcome aboard!
     ''')
 
 
-greet_user(
-    last_name='Polcyn',
-    first_name='Maciej')  # keyword arguments - position doesn't matter
+def square(number):
+    number = number * number
+    return number
+
+
+print(square(4))
+
+# greet_user(
+#     last_name='Polcyn',
+#     first_name='Maciej')  # keyword arguments - position doesn't matter
+
