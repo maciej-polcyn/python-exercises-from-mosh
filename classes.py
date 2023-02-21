@@ -5,5 +5,21 @@ class Person:
         print(f"Hi, I'm {self.name}!")
 
 
-john = Person('John')
-john.talk()
+class Mammal:
+    def walk(self):
+        print('walk')
+
+
+class Dog(Mammal):
+    def bark(self):
+        print('woof!')
+
+
+class Cat(Mammal):
+    def meow(self):
+        print('meow')
+
+
+totem = Dog()
+totem.walk()
+totem.bark()
